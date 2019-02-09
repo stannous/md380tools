@@ -8,6 +8,11 @@
     brew upgrade
     brew install binutils libusb
     brew cask install gcc-arm-embedded # This is where you get the ARM cross-compiling stuff
+    # Since Mojave users will not be able to find gcc-arm-embedded,
+    # they will need to do the following
+    #    brew tap PX4/homebrew-px4
+    #    brew update
+    #    brew install -v gcc-arm-none-eabi
     sudo easy_install pip
     sudo pip2 install pyusb
 
